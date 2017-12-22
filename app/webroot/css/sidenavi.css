@@ -1,0 +1,13 @@
+
+/* side-navi.css*/
+
+#sidenavi {
+float: left;
+width: 200px; /* サイドバーの幅 */
+position: fixed;
+background-color: #2f4f4f;
+}
+
+#content {
+padding: 0 0 0 200px;
+}

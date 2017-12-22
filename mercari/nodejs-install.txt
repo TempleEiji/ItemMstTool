@@ -1,0 +1,21 @@
+#mysql
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+sudo yum update
+
+＃nodejsインストール必要です。
+sudo yum install epel-release
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+sudo yum -y install nodejs
+sudo yum install gcc-c++ make
+
+＃nodejsのライブラリ
+npm install --save sequelize
+npm install --save mysql2
+
+#install phantomjs
+sudo rpm -ivh http://repo.okay.com.mx/centos/6/x86_64/release/okay-release-1-1.noarch.rpm
+sudo yum search all phantomjs
+sudo yum install phantomjs.x86_64
+
+npm install phantom
